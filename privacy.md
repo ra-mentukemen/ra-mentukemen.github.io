@@ -12,10 +12,11 @@ Charmosaic（以下「本アプリ」）は、Daisuke Ito（以下「開発者�
 本アプリは、個人情報を含むいかなるデータも収集しません。アカウント登録は不要で、氏名・メールアドレス・位置情報・連絡先などを取得することはありません。
 
 ## 2. 画像・カメラ・写真
-- 本アプリは、利用者が選択した写真およびカメラで撮影した画像をASCIIアートに変換します。
+- 本アプリは、利用者がシステムの写真ピッカーで選んだ画像、およびカメラで撮影した画像をASCIIアートに変換します。
 - これらの画像はすべて利用者の端末内でのみ処理され、開発者や第三者のサーバーへ送信されることはありません。
 - カメラへのアクセスは、写真を撮影して変換する目的にのみ使用します。
-- 写真ライブラリへのアクセスは、利用者が「画像で保存」を選んだ際に、生成した画像を保存する目的にのみ使用します（追加のみ・読み取りは行いません）。
+- 写真の選択は、システムの写真ピッカーを通じて利用者が明示的に選んだ画像のみを受け取ります（写真ライブラリ全体への読み取りアクセスは要求しません）。
+- 写真ライブラリへの書き込みアクセスは、利用者が「画像で保存」を選んだ際に、生成した画像を追加保存する目的にのみ使用します（追加のみ）。
 
 ## 3. データの送信・第三者提供
 本アプリはネットワーク通信機能を持たず、いかなるデータも外部へ送信しません。したがって、第三者への提供・販売も行いません。
@@ -46,10 +47,11 @@ Charmosaic (the "App") is an app provided by Daisuke Ito (the "Developer") that 
 The App does not collect any data, including personal information. No account is required, and the App does not access your name, email address, location, or contacts.
 
 ## 2. Photos, Camera, and Images
-- The App converts photos you select and images you capture with the camera into ASCII art.
+- The App converts images you select through the system photo picker and images you capture with the camera into ASCII art.
 - All such images are processed solely on your device and are never transmitted to the Developer or any third-party server.
 - Camera access is used only to take photos for conversion.
-- Photo library access is used only when you choose "Save as Image," to save the generated image (add-only; the App does not read your library).
+- Image selection uses the system photo picker, which provides only the images you explicitly choose; the App does not request read access to your entire photo library.
+- Write access to the photo library is used only when you choose "Save as Image," to add the generated image (add-only).
 
 ## 3. Data Transmission and Sharing
 The App has no networking capability and does not transmit any data. Accordingly, it does not share or sell data to third parties.
